@@ -14,4 +14,8 @@ Route::group([
 
     $router->get('/', 'HomeController@index');
 
+    Route::group(['prefix' => 'roll-call'], function (Router $router) {
+        $router->resource('/', RollCallController::class)->parameters(['' => 'roll_call']);
+    });
+
 });
