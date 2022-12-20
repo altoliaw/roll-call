@@ -49,9 +49,9 @@ class Course extends Model
      *
      * @return belongsToMany
      */
-    public function users(): belongsToMany
+    public function members(): belongsToMany
     {
-        return $this->belongsToMany(User::class)->without('courses');
+        return $this->belongsToMany(Member::class)->without('courses');
     }
 
     /**

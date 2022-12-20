@@ -1,0 +1,32 @@
+use App\Models\Member as m_U;
+m_U::get();
+m_U::with(['courses'])->get();
+
+
+use App\Models\Course as m_C;
+m_C::get();
+m_C::with(['members'])->withpivot([])->get();
+
+use App\Models\RollCall as m_R;
+m_R::with(['courseMember.member', 'courseMember.course'])->get();
+m_R::get();
+
+use App\Models\CourseUser as m_CU;
+m_CU::get();
+
+
+$appendQuery = function ($query) use ($brandIds) {
+            return $query->when(count($brandIds), function($query) use ($brandIds) {
+                return $query->whereIn('id', $brandIds);
+            });
+        };
+
+
+use App\Repositories\RollCallRepository as r_RC;
+$v =new r_RC;
+$v->find(1);
+
+
+use App\Services\RollCallService as s;
+$s = resolve(s::class);
+$v->find(1);
