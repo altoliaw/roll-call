@@ -1,1 +1,0 @@
-[{"id":1,"username":"admin","password":"$2y$10$nZ7\/u\/V4s.X.55laShD8uO7Blwhbq8tIQDWrjbdpL3FFbOpitczDK","name":"Administrator","avatar":null,"remember_token":"VCCVD9c4FCD2UV1Z3V4asFxA4elMhT5gpogLbXqvG9gYNUjH0eiW6Ne61Ung","created_at":"2022-11-30 02:56:42","updated_at":"2022-11-30 10:41:38"}]

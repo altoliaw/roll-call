@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
     {
 
         $this->call(DevTestingData::class);
-        $this->call(AdminTableSeeder::class);
+        //$this->call(AdminTableSeeder::class);
 
         // \App\Models\User::factory(10)->create();
         // \App\Models\User::factory()->create([
